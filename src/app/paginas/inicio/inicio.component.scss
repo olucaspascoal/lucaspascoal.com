@@ -1,0 +1,36 @@
+.inicio{
+    &-titulo{
+        line-height: 2.5rem;
+    }
+    &-texto{
+        color: #D4D4D488;
+    }
+
+    &-projetos{
+        margin: 2rem 0;
+        &-titulo{
+            font-weight: 400;
+            margin: 1rem 0;
+        }
+        &-box{
+            display:   flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &-item{
+                width: 49%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .inicio{
+        &-projetos{
+            &-box{
+                &-item{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

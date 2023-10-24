@@ -1,0 +1,72 @@
+.menu{
+
+    &-flex{
+        display: flex;
+    }
+    h1{
+        font-weight: 500;
+    }
+    &-titulo{
+        font-size: 1.5rem;
+    }
+    &-link{
+        color: gray;
+        line-height: 0;
+        // &:hover{
+        //     cursor: pointer;
+        //     color: #991ad9;
+        // }
+    }
+    &-funcao{
+        color: gray;
+        font-weight: 400;
+        margin: 1rem 0 .5rem;
+    }
+    &-svg{
+        width:  1.5rem;
+        height: 1.5rem;
+    }
+    &-span{
+        color: gray;
+    }
+
+    &-ul{
+        margin: 1rem 0;
+        &-li{
+            list-style: none;
+            margin: 7px;
+            padding: .5rem;
+            border-radius: 5px;
+            &:hover{
+                cursor: pointer;
+                background-color: #1e1d1ed9;
+                transition: .5 ease-in 1s;
+            }
+        }
+    }
+    &-footer{
+        p{
+            color: gray;
+            font-size: .7rem;
+        }
+    }
+}
+
+
+.--ativo{
+    background-color: #1e1d1ed9;
+}
+
+
+.hover {
+    cursor: pointer;
+    color: transparent;
+    background: linear-gradient(90deg, #991ad9 50%, gray 0) var(--_p, 100%) / 200% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 1s;
+}
+.hover:hover {
+    --_p: 0%;
+}
+

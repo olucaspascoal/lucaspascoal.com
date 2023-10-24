@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin:  0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+$cor-branca: rgb(241, 241, 241);
+$cor-roxa: rgba(56,11,71,1);
+$cor-cinza: rgba(24,24,27,1);
+$cor-roxa-escura: rgb(23, 8, 28);
+
+html{
+    color: #FFF;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background: rgb(56,11,71);
+    background: linear-gradient(319deg, rgba(56,11,71,1) 0%, rgb(23, 8, 28) 47%, rgba(24,24,27,1) 100%);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background: $cor-cinza;
+}
+::-webkit-scrollbar-thumb {
+    background: #9562A6;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: $cor-roxa;
+}
+
+::selection {
+    color: #9562A6;
+    background-color: #4F12635B;
+}
+
+hr {
+	border: 0;
+    margin: 1rem 0;
+	border-top: 1px solid #cbcbcb20;
+}
+
+.titulo{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.hover {
+    cursor: pointer;
+    color: transparent;
+    background: linear-gradient(90deg, #991ad9 50%,#FFF 0) var(--_p, 100%) / 200% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 1s;
+}
+.hover:hover {
+    --_p: 0%;
+}
+

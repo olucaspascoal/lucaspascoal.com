@@ -1,0 +1,14 @@
+<div class="projetos">
+    <h1 class="projetos-titulo titulo hover"> Projetos </h1>
+    <hr>
+    <p class="projetos-texto">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita adipisci, deleniti molestiae quisquam
+        eligendi quo repellat quaerat quam, dolor, earum provident. Totam illo iusto recusandae obcaecati optio
+        ipsum. Vitae, similique.
+    </p>
+    <div class="projetos-box">
+        <ng-container *ngFor="let item of projetos">
+            <app-projeto class="projetos-box-item" [data]="item"></app-projeto>
+        </ng-container>
+    </div>
+</div>

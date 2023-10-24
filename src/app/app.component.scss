@@ -1,0 +1,30 @@
+.main{
+    display: flex;
+    padding: 5rem;
+    &-esq{
+        padding: 2rem 1rem 2rem 0;
+        display: flex;
+        width: 20%;
+        top: 0;
+        position: sticky;
+        align-self: flex-start;
+    }
+    &-dir{
+        width: 80%;
+        padding: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main{
+        padding: 2rem;
+        &-esq{
+            display: none;
+        }
+        &-dir{
+            width: 100%;
+        }
+    }
+}
+
+

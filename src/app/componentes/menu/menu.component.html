@@ -1,0 +1,102 @@
+<div class="menu">
+  <h1 class="menu-titulo">Lucas Pascoal</h1>
+  <a class="menu-link hover" href="https://github.com/olucaspascoal" target="_blank" >
+    @olucaspascoal
+  </a>
+  <h4 class="menu-funcao">Desenvolvedor Web</h4>
+  <div class="menu-flex">
+      <img class="menu-svg" src="assets/svg/localizacao.svg" alt="Localização">
+      <span class="menu-span"> Rio de Janeiro, Brasil </span>
+  </div>
+
+
+  <hr />
+  <ul class="menu-ul">
+    <li class="menu-ul-li" *ngFor="let item of rotas; let i = index"
+      [ngClass]="{ '--ativo': itemAtivo == i }" [routerLink]="item.rota"
+      (click)="mudar(i)"
+    >
+      {{ item.nome }}
+    </li>
+  </ul>
+  <hr />
+  <div class="menu-footer">
+    <p> &copy; {{anoAtual}} - Todos os direitos reservados </p>
+  </div>
+</div>
+
+<!-- <header class="sticky top-0 z-10 flex h-20 w-full self-start bg-background lg:h-auto lg:w-1/2 lg:max-w-[230px] lg:flex-col lg:bg-transparent lg:py-8">
+
+    <div class="flex w-full items-center justify-between gap-2 lg:flex-col lg:items-start lg:gap-0.5">
+        <div class="group relative -ml-1 mb-2 hidden rounded-full border border-neutral-800 bg-background p-5 duration-500 ease-in-out lg:block scale-100">
+            <div class="overflow-hidden">
+        <img
+          alt="Gustavo"
+          loading="lazy"
+          width="209"
+          height="208"
+          decoding="async"
+          data-nimg="1"
+          class="w-9 scale-100 duration-300 ease-in-out group-hover:scale-105"
+          src="/_next/static/media/logo.cea8a34c.svg"
+          style="color: transparent"
+        />
+      </div>
+      <div
+        class="absolute bottom-1 right-1 h-4 w-4 rounded-full bg-emerald-600"
+      >
+        <div
+          class="absolute -right-0 bottom-0 z-[11] h-4 w-4 rounded-full bg-emerald-600 transition-[4s]"
+        ></div>
+      </div>
+    </div>
+    <div class="hidden lg:block">
+        <h1 class="font-title text-md lg:text-xl">Lucas Pascoal</h1>
+        <a href="https://github.com/olucaspascoal" target="_blank" rel="noreferrer" class="block w-fit">
+            <p class="text-neutral-400 font-medium text-sm duration-300 hover:text-foreground">
+            @olucaspascoal
+            </p>
+        </a>
+    </div>
+    <div class="mb-1 mt-3 hidden lg:block">
+      <p class="text-foreground font-normal hidden text-sm lg:block">
+        Desenvolvedor Web
+      </p>
+    </div>
+    <a href="/"
+      ><div
+        class="my-2 rounded-full border border-neutral-800 bg-background p-3 lg:hidden"
+      >
+        <img
+          alt="Gustavo"
+          loading="lazy"
+          width="209"
+          height="208"
+          decoding="async"
+          data-nimg="1"
+          class="w-5 scale-100 duration-300 ease-in-out group-hover:scale-105"
+          src="/_next/static/media/logo.cea8a34c.svg"
+          style="color: transparent"
+        /></div></a
+    ><button
+      class="text-neutral-400 transition-transform active:scale-75 lg:hidden"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-equal"
+      >
+        <line x1="5" x2="19" y1="9" y2="9"></line>
+        <line x1="5" x2="19" y1="15" y2="15"></line>
+      </svg>
+    </button>
+    </div>
+    <div class="h-px w-full bg-neutral-800 my-3 hidden lg:block"></div>
+</header> -->

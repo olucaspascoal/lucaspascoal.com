@@ -1,0 +1,15 @@
+<div class="inicio">
+    <h1 class="inicio-titulo titulo hover"> Lucas Pascoal </h1>
+    <p class="inicio-texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus, ex repudiandae cum recusandae odio! Ipsam ratione deleniti pariatur temporibus illo iusto, vel dicta consequatur quidem repellat nesciunt neque omnis?
+    </p>
+    <hr>
+    <div class="inicio-projetos">
+        <h3 class="inicio-projetos-titulo"> Últimos projetos </h3>
+        <div class="inicio-projetos-box">
+            <ng-container *ngFor="let item of projetos">
+                <app-projeto class="inicio-projetos-box-item" [data]="item"></app-projeto>
+            </ng-container>
+        </div>
+    </div>
+</div>

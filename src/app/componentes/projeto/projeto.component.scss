@@ -1,0 +1,26 @@
+@import '../../../styles.scss';
+
+.projeto{
+    opacity: 0.6;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    transition: 0.7s;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.078);
+
+    &-imagem{
+        & img{
+            width:  100%;
+            height: auto;
+            border-radius: 7px;
+        }
+    }
+    &-descricao{
+        color: gray;
+    }
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+        background: rgba(128, 128, 128, 0.078);
+    }
+}

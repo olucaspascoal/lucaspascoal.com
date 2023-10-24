@@ -1,0 +1,35 @@
+@import "../../../styles.scss";
+
+
+.contato{
+    &-texto{
+        color: #D4D4D488;
+    }
+    &-redes{
+        margin: 1rem 0;
+        &-titulo{
+            font-weight: 300;
+        }
+        &-box{
+            &-item{
+                display: flex;
+                color: #FFF;
+                padding: .5rem;
+                border-radius: 5px;
+                width: fit-content;
+                align-items: center;
+                text-decoration: none;
+                border: 1px solid $cor-branca;
+                background-color: $cor-cinza;
+                &:hover{
+                    cursor: pointer;
+                }
+                & img{
+                    width:  auto;
+                    height: 2rem;
+                    padding-right: .5rem;
+                }
+            }
+        }
+    }
+}

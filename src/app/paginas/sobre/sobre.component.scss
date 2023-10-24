@@ -1,0 +1,14 @@
+.sobre{
+    &-esq{
+        width: 60%;
+        p{
+            color: #D4D4D488;
+            &:not(:first-child){
+                margin-top: 1rem;
+            }
+        }
+    }
+    &-dir{
+        width: 40%;
+    }
+}
